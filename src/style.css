@@ -1,0 +1,21 @@
+body{
+    background-color: blanchedalmond;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    width: 40vw;
+    margin: auto;
+    border: 3px solid black;
+}
+.hidden{
+    /* display: none; */
+}
+li{
+    list-style-type: none;
+}
