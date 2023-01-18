@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getTodos } from "../services/todos-api";
-import { CreateTodo } from "./CreateTodo";
+import CreateTodo from "./CreateTodo";
 import Form from "./Form";
 
 export default function Todos() {
@@ -15,6 +15,7 @@ export default function Todos() {
   console.log(toDoList);
   return (
     <div>
+        <CreateTodo />
       <ul>
         {toDoList.map((todo) => {
           return (
@@ -26,7 +27,6 @@ export default function Todos() {
           );
         })}
       </ul>
-      {/* <CreateTodo/> */}
     </div>
   );
 }

@@ -13,13 +13,6 @@ export const EditTodo = () => {
         .then(res => setData(res.data))
     }, [])
 
-    //function to actually edit the tod
-    // const editTheTodo = e => {
-    //     e.preventDefault()
-    //     const updatedTodo = {title: e.target.title.value, description: e.target.description.value, complete: e.target.complete.checked}
-    //     editTodo(id, updatedTodo)
-    //     nav(`/${id}`)
-    // }
     return (
     <div>
         <Form props={ data }/>

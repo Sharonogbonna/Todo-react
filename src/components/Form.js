@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router"
-import { createTodo, editTodo, getTodo } from "../services/todos-api"
+import { createTodo, editTodo } from "../services/todos-api"
 
 export default function Form({ props }){
     console.log(props)
@@ -26,9 +26,9 @@ export default function Form({ props }){
         <form onSubmit={handleSubmit}>
             <h3>Add Item To Do</h3>
             <input type='text' name="title" placeholder="title" defaultValue={props.title}/> <br/>
-            <input type="text" name="description" placeholder="description" defaultValue={props.description}/>
+            <textarea type="text" name="description" placeholder="description" defaultValue={props.description}/>
             <input type='checkbox' name="complete" defaultChecked={props.complete}/>
-            <input type='submit' value='Add todo'/>
+            <input type='submit' value='Edit To Do'/>
         </form>
     )
 }
