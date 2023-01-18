@@ -13,8 +13,15 @@ form{
     margin: auto;
     border: 3px solid black;
 }
+.completed{
+    text-decoration: line-through;
+}
 .hidden{
-    /* display: none; */
+    display: none;
+}
+.active{
+    text-decoration: underline;
+    font-size: 10px;
 }
 li{
     list-style-type: none;
